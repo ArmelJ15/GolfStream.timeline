@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini-site éducatif : Gulf Stream</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleScenarios() {
+      const section = document.getElementById('scenarios');
+      section.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans">
+  <div class="container mx-auto p-6 space-y-10">
+    <header class="text-center">
+      <h1 class="text-4xl font-bold mb-2">🌊 Mini-site éducatif : Le Gulf Stream</h1>
+      <p class="text-lg text-gray-600">Comprendre le rôle crucial de ce courant océanique et les enjeux de son évolution</p>
+    </header>
+
+    <!-- Section d’introduction -->
+    <section class="bg-white p-6 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-4">🔎 Qu’est-ce que le Gulf Stream ?</h2>
+      <p class="mb-4">Le Gulf Stream est un puissant courant océanique qui prend naissance dans le golfe du Mexique, traverse l’Atlantique Nord et influence profondément le climat de l’Amérique du Nord et de l’Europe. Il fait partie d’un système plus large appelé <strong>circulation méridienne de retournement de l’Atlantique (AMOC)</strong>.</p>
+      <p>Ce courant transporte une immense quantité de chaleur, jouant un rôle majeur dans la régulation climatique planétaire.</p>
+    </section>
+
+    <!-- Section pédagogique -->
+    <section class="bg-white p-6 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-4">🌡️ Pourquoi est-il menacé ?</h2>
+      <p>Le réchauffement climatique accélère la fonte des glaces au Groenland, injectant de grandes quantités d’eau douce dans l’Atlantique Nord. Cela perturbe le mécanisme de plongée des eaux froides, un élément clé de l’AMOC.</p>
+      <p class="mt-2">Un affaiblissement, voire un effondrement, du Gulf Stream aurait des conséquences graves : hivers plus rigoureux en Europe, montée des eaux sur la côte Est des États-Unis, perturbations des moussons en Afrique et en Asie, etc.</p>
+    </section>
+
+    <!-- Ligne du temps -->
+    <section class="space-y-8">
+      <h2 class="text-2xl font-bold">🕒 Ligne du temps : Gulf Stream</h2>
+
+      <!-- Étape 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">🌍 Avant 1900</h3>
+        <p>Le Gulf Stream fonctionne normalement depuis des millénaires. Il stabilise les climats régionaux.</p>
+      </div>
+
+      <!-- Étape 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">🌡️ 20ᵉ siècle</h3>
+        <p>Montée des gaz à effet de serre. Le Gulf Stream reste encore stable.</p>
+      </div>
+
+      <!-- Étape 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">🧊 1990–2020</h3>
+        <p>Fonte du Groenland en accélération. Début du ralentissement du courant.</p>
+      </div>
+
+      <!-- Étape 4 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">⚠️ 2021</h3>
+        <p>Études : le courant est au plus bas depuis 1 000 ans. Risque croissant d’effondrement.</p>
+      </div>
+
+      <!-- Étape 5 avec scénario -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">🔮 2030–2050 (prévisions)</h3>
+        <p>Point de basculement possible. Fortes conséquences à prévoir si aucune action n’est prise.</p>
+        <button onclick="toggleScenarios()" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700">
+          Explorer les scénarios futurs
+        </button>
+        <div id="scenarios" class="hidden mt-4 space-y-2">
+          <div class="p-4 bg-blue-100 rounded-xl">
+            <strong>Scénario optimiste :</strong> émissions réduites, courant stabilisé.
+          </div>
+          <div class="p-4 bg-blue-100 rounded-xl">
+            <strong>Scénario intermédiaire :</strong> ralentissement sévère, changements climatiques régionaux.
+          </div>
+          <div class="p-4 bg-blue-100 rounded-xl">
+            <strong>Scénario pessimiste :</strong> effondrement complet de l’AMOC, dérèglements mondiaux.
+          </div>
+        </div>
+      </div>
+
+      <!-- Étape 6 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-2">✅ Agir dès maintenant</h3>
+        <p>Réduire les émissions, surveiller les océans, préserver les pôles : les solutions existent.</p>
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="bg-white p-6 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-4">📚 Pour aller plus loin</h2>
+      <ul class="list-disc list-inside">
+        <li><a href="https://fr.wikipedia.org/wiki/Gulf_Stream" target="_blank" class="text-blue-600 underline">Gulf Stream sur Wikipédia</a></li>
+        <li><a href="https://www.ipcc.ch/languages-2/francais/" target="_blank" class="text-blue-600 underline">Rapports du GIEC (IPCC)</a></li>
+        <li><a href="https://climate.nasa.gov/" target="_blank" class="text-blue-600 underline">Données climatologiques de la NASA</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
